@@ -1,0 +1,65 @@
+@use 'mixin';
+@use 'var' as *;
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    @include mixin.flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url('/images/banner.png');
+}
+
+.leftBan {
+    width: 40%;
+    
+    .profile-img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.rightBan {
+    flex-direction: column;
+
+}
+
+.mainContent {
+    @include mixin.flex;
+}
+
+.leftMain {
+    width: $width-cols;
+    text-indent: $indent;
+    background-color: $back-color1;
+
+    p i {
+        background-color: #000000;
+        color: $back-color1;
+        padding-right: 10px;
+    }
+}
+
+.rightMain {
+    width: $width-cols;
+    text-indent: $indent;
+    background-color: $back-color2;
+}
+
+.title {
+    color: $title-color;
+}
+
+.grayLine {
+    padding: 5px 1rem;
+    background-color: $underline-color;
+    margin: 1.5rem 0;
+}
+

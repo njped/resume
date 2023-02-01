@@ -1,0 +1,10 @@
+@use '../var' as *;
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+}
